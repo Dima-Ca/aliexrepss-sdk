@@ -1,0 +1,43 @@
+{
+    "name": "aliexpress/dropshippingsdk",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/aliexpress/dropshippingsdk",
+    "keywords": ["Laravel", "DropshippingSdk"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aliexpress\\DropshippingSdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aliexpress\\DropshippingSdk\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aliexpress\\DropshippingSdk\\DropshippingSdkServiceProvider"
+            ],
+            "aliases": {
+                "DropshippingSdk": "Aliexpress\\DropshippingSdk\\Facades\\DropshippingSdk"
+            }
+        }
+    }
+}

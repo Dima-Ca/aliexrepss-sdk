@@ -1,12 +1,11 @@
 {
     "name": "aliexpress/dropshippingsdk",
     "description": ":description",
+    "version": "1.0.0",
     "license": "license",
     "authors": [
         {
-            "name": "author name",
-            "email": "author email",
-            "homepage": "author homepage"
+            "name": "Sun Hui Vyn"
         }
     ],
     "homepage": "https://github.com/aliexpress/dropshippingsdk",

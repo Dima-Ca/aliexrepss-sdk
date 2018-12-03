@@ -18,7 +18,7 @@ class DropshippingSdkServiceProvider extends ServiceProvider
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
-        require(__DIR__ . '/Junk/TopSdk.php');
+        require_once(__DIR__ . '/Junk/TopSdk.php');
 
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {

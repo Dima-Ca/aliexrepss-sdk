@@ -3,7 +3,7 @@
  * TOP API: aliexpress.logistics.buyer.freight.calculate request
  * 
  * @author auto create
- * @since 1.0, 2018.11.09
+ * @since 1.0, 2019.05.15
  */
 class AliexpressLogisticsBuyerFreightCalculateRequest
 {

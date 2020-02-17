@@ -3,7 +3,7 @@
  * TOP API: aliexpress.offer.ds.product.simplequery request
  * 
  * @author auto create
- * @since 1.0, 2018.11.27
+ * @since 1.0, 2019.05.28
  */
 class AliexpressOfferDsProductSimplequeryRequest
 {

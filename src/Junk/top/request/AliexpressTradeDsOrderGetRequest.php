@@ -3,7 +3,7 @@
  * TOP API: aliexpress.trade.ds.order.get request
  * 
  * @author auto create
- * @since 1.0, 2018.11.16
+ * @since 1.0, 2019.12.26
  */
 class AliexpressTradeDsOrderGetRequest
 {

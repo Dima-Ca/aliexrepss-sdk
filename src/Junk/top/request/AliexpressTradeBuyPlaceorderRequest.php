@@ -3,7 +3,7 @@
  * TOP API: aliexpress.trade.buy.placeorder request
  * 
  * @author auto create
- * @since 1.0, 2018.09.30
+ * @since 1.0, 2019.10.15
  */
 class AliexpressTradeBuyPlaceorderRequest
 {

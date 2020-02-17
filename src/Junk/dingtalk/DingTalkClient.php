@@ -267,7 +267,7 @@ class DingTalkClient
 		if($fileFields != null){
 			foreach ($fileFields as $name => $file) {
 			    $data .= "--" . $delimiter . "\r\n";
-			    $data .= 'Content-Disposition: form-data; name="' . $name . '"; filename="' . $file['name'] . "\" \r\n";
+			    $data .= 'Content-Disposition: form-data; name="' . $name . '"; filename="' . $file['filename'] . "\" \r\n";
 			    $data .= 'Content-Type: ' . $file['type'] . "\r\n\r\n";//多了个文档类型
 
 			    $data .= $file['content'] . "\r\n";
@@ -363,7 +363,11 @@ class DingTalkClient
         $sysParams["method"] = $request->getApiMethodName();
         //系统参数放入GET请求串
         if($bestUrl){
-            $requestUrl = $bestUrl."?";
+            if(strpos($bestUrl,'?') === false){
+                $requestUrl = $bestUrl."?";
+            }else{
+                $requestUrl = $bestUrl;
+            }
         }else{
             $requestUrl = $this->gatewayUrl."?";
         }
@@ -515,7 +519,11 @@ class DingTalkClient
 
 		//系统参数放入GET请求串
 		if($bestUrl){
-			$requestUrl = $bestUrl."?";
+            if(strpos($bestUrl,'?') === false){
+                $requestUrl = $bestUrl."?";
+            }else{
+                $requestUrl = $bestUrl;
+            }
 			$sysParams["partner_id"] = $this->getClusterTag();
 		}else{
 			$requestUrl = $this->gatewayUrl."?";

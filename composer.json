@@ -11,7 +11,7 @@
     "homepage": "https://github.com/aliexpress/dropshippingsdk",
     "keywords": ["Laravel", "DropshippingSdk"],
     "require": {
-        "illuminate/support": "~5"
+        "illuminate/support": "~6"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.0",
